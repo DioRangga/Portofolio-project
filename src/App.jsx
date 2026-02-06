@@ -29,28 +29,30 @@ function App() {
     </div>
     <img src={DataImage.HeroImage} alt="Hero Image" className="w-125 md:ml-auto" />
    </div>
+
+
     {/* tentang */}
       <div className="tentang mt-32 py-10">
-        <div>
-          <p>
+        <div className="w-2/3 mx-auto p-7 bg-zinc-800 rounded-lg">
+          <p className="text-base/loose mb-10">
           Hi, perkenalkan saya Dio Rangga seorang IT Support dan CyberSecurity untuk keamanan suatu 
           jaringan di sebuah lembaga, saya percaya bahwa keamanan bukan sekadar fitur, melainkan keharusan. 
           Dengan pengalaman di garis depan IT Support, saya memadukan kemampuan pemecahan masalah teknis 
           dengan strategi perlindungan jaringan untuk menciptakan ekosistem digital yang tangguh dan aman 
           bagi seluruh pengguna.    
           </p>
-          <div>
+          <div className="flex items-center justify-between">
             <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md" />
-            <div>
+            <div className="flex items-center gap-6">
               <div>
-                <h1>
-                  45 <span></span>
+                <h1 className="text-4xl mb-1">
+                  7 <span className="text-violet-500">+</span>
                 </h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>
-                <h1>
-                  4 <span></span>
+                <h1 className="text-4xl mb-1" >
+                  5 <span className="text-violet-500">+</span>
                 </h1>
                 <p>Tahun Pengalaman</p>
               </div>
