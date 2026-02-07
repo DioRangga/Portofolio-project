@@ -113,6 +113,35 @@ function App() {
       </div>
       </div>
      {/* Proyek */}
+      {/* Kontak */}
+      <div className="kontak mt-32 p-10">
+        <h1 className="text-4xl mb-2 font-bold text-center">Kontak</h1>
+        <p className="text-base/loose text-center mb-10 opacity-50">Mari terhubung dengan saya.</p>
+      <form action="" className="bg-zinc-800 p-10 w-fit mx-auto rounded-md" autoComplete="off">
+        <div>
+          <div>
+          <label> Nama Lengkap</label>
+          <input type="text" name="nama" placeholder="Masukan Nama..." required />
+          </div>
+          <div>
+          <label> Email</label>
+          <input type="email" name="email" placeholder="Masukan Email..." required />
+          </div>
+          <div>
+          <label> Pesan</label>
+          <textarea name="pesan" id="pesan" cols="30" rows="10" placeholder="Pesan..."></textarea>
+          </div>
+          <div>
+          <button type="submit">Kirim Pesan</button>
+          </div>
+        </div>
+      </form>
+      </div>
+      {/* Kontak */}
+
+
+
+
     </>
   );
 }
