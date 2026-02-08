@@ -33,7 +33,7 @@ function App() {
 
    <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
     <div className="animate__animated animate__fadeInUp animate__delay-2s">
-      <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
+      <div className="flex items-center gap-3 mb-6 bg-zinc-800/30 backdrop-blur-md  w-fit p-4 rounded-2xl">
         <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy"/>
         <q>"Behind every technical issue is a person trying to do their best work. I’m here for both."</q>
       </div>
@@ -45,7 +45,7 @@ function App() {
         lebih dari  tahun.
         </p>
         <div className="flex items-center sm:gap-4 gap-2">
-          <a href="#" className="bg-violet-700 p-4 rounded-2xl hover:bg-violet-600">
+          <a href="#" className="bg-cyan-600 p-4 rounded-2xl hover:bg-cyan-500">
             Download CV <i className="ri-download-line ri-lg"></i>
             </a>
           <a href="#proyek" className="bg-zinc-700 p-4 rounded-2xl hover:bg-zinc-600">
@@ -75,13 +75,13 @@ function App() {
             <div className="flex items-center gap-6">
               <div>
                 <h1 className="text-4xl mb-1">
-                  7 <span className="text-violet-500">+</span>
+                  7 <span className="text-cyan-500">+</span>
                 </h1>
                 <p>Proyek Selesai</p>
               </div>
               <div>
                 <h1 className="text-4xl mb-1" >
-                  5 <span className="text-violet-500">+</span>
+                  5 <span className="text-cyan-500">+</span>
                 </h1>
                 <p>Tahun Pengalaman</p>
               </div>
@@ -139,8 +139,8 @@ function App() {
               ))}
             </div>
             <div className="mt-8 text-center">
-              <a href="#" className="bg-violet-700 p-3 rounded-lg block border border-zinc-600
-               hover:bg-violet-600">Lihat Website</a>
+              <a href="#" className="bg-cyan-600 p-3 rounded-lg block border border-zinc-600
+               hover:bg-cyan-500">Lihat Website</a>
             </div>
             </div>
         </div>
@@ -172,8 +172,8 @@ function App() {
            border-zinc-500 p-2 rounded-md required"></textarea>
           </div>
           <div className="text-center">
-          <button type="submit" className="bg-violet-700 p-3 rounded-lg w-full cursor-pointer border
-           border-zinc-600 hover:bg-violet-600">Kirim Pesan</button>
+          <button type="submit" className="bg-cyan-600 p-3 rounded-lg w-full cursor-pointer border
+           border-zinc-600 hover:bg-cyan-500">Kirim Pesan</button>
           </div>
         </div>
       </form>
