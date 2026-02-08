@@ -1,11 +1,36 @@
 import DataImage from "./data";
 import { listTools, listProyek } from "./data";
+import Navbar from "./components/Navbar"; // Sesuaikan path foldernya
+import Footer from "./components/Footer";
 
 
 function App() {
 
   return (
-    <>
+  <div className="relative min-h-screen w-full bg-[#0a0a0a] overflow-hidden text-white">
+      
+      {/* 2. LAYER BACKGROUND: Letakkan "Bola Cahaya" di sini (Z-INDEX RENDAH) */}
+      {/* --- START LAYER BACKGROUND (Warna Biru/Cyan Terang seperti Gambar) --- */}
+{/* Bola Biru Terang di Kiri Atas */}
+<div className="absolute top-[-5%] left-[-10%] w-150 h-150 rounded-full bg-cyan-500/10 blur-[120px] pointer-events-none animate-pulse" />
+
+{/* Bola Biru Gelap di Tengah Kanan */}
+<div className="absolute top-[15%] right-[-10%] w-125 h-125 rounded-full bg-blue-600/10 blur-[100px] pointer-events-none" />
+
+{/* Aksen Biru Terang di Tengah untuk efek "Glow" */}
+<div className="absolute top-[10%] left-[20%] w-75 h-75 rounded-full bg-sky-400/10 blur-[80px] pointer-events-none" />
+
+{/* Bola Slate/Abu-abu di Bawah untuk kedalaman */}
+<div className="absolute bottom-[10%] right-[10%] w-150 h-150 rounded-full bg-slate-700/20 blur-[130px] pointer-events-none" />
+{/* --- END LAYER BACKGROUND --- */}
+
+      {/* 3. LAYER KONTEN: Pastikan menggunakan relative z-10 agar berada di atas background */}
+      <div className="relative z-10 container mx-auto px-4">
+<Navbar />
+
+
+
+
    <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
     <div className="animate__animated animate__fadeInUp animate__delay-2s">
       <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
@@ -154,11 +179,11 @@ function App() {
       </form>
       </div>
       {/* Kontak */}
+<Footer />
 
+    </div> {/* Penutup Layer Konten */}
+    </div>
 
-
-
-    </>
   );
 }
 
