@@ -7,7 +7,7 @@ function App() {
   return (
     <>
    <div className="hero grid md:grid-cols-2 items-center pt-10 xl:gap-0 gap-6 grid-cols-1">
-    <div>
+    <div className="animate__animated animate__fadeInUp animate__delay-2s">
       <div className="flex items-center gap-3 mb-6 bg-zinc-800 w-fit p-4 rounded-2xl">
         <img src={DataImage.HeroImage} alt="Hero Image" className="w-10 rounded-md" loading="lazy"/>
         <q>Something To Jump 😜 </q>
@@ -28,13 +28,15 @@ function App() {
             </a>
         </div>
     </div>
-    <img src={DataImage.HeroImage} alt="Hero Image" className="w-125 md:ml-auto" loading="lazy"/>
+    <img src={DataImage.HeroImage} alt="Hero Image" className="w-125 md:ml-auto
+    animate__animated animate__backInRight animate__delay-3s" loading="lazy"/>
    </div>
 
 
     {/* tentang */}
       <div className="tentang mt-32 py-10">
-        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg">
+        <div className="xl:w-2/3 lg:w-3/4 w-full mx-auto p-7 bg-zinc-800 rounded-lg"
+         data-aos="fade-up" data-aos-duration="1000">
         <img src={DataImage.HeroImage} alt="Image" className="w-12 rounded-md mb-10 sm:hidden" loading="lazy"/>
           <p className="text-base/loose mb-10">
           Hi, perkenalkan saya Dio Rangga seorang IT Support dan CyberSecurity untuk keamanan suatu 
@@ -62,17 +64,21 @@ function App() {
           </div>
         </div>
 
+    {/* tools */}
         <div className="tools mt-32">
-        <h1 className="text-4xl/snug font-bold mb-4">Tools yang dipakai</h1>
+        <h1 className="text-4xl/snug font-bold mb-4" 
+        data-aos="fade-up" data-aos-duration="1000">Tools yang dipakai</h1>
         <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-fulltext-base/loose 
-        opacity-50">Berikut ini beberapa tools yang biasa saya 
+        opacity-50" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          Berikut ini beberapa tools yang biasa saya 
         pakai untuk pembuatan website ataupun Design</p>
           <div className="tools-box mt-14 grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2
           grid-cols-1 gap-4 ">
 
             {listTools.map((tool) => (
               <div className=" flex items-center gap-2 p-3 border border-zinc-600 rounded-md
-                   hover:bg-zinc-800 group key={tool.id}>">
+                   hover:bg-zinc-800 group key={tool.id} 
+                   "data-aos="fade-up" data-aos-duration="1000" data-aos-delay={tool.dad}>
                 <img src={tool.gambar} alt="Tools Image" className="w-14 bg-zinc-800 p-1 
                    group-hover:bg-zinc-900" />
               <div>
@@ -87,12 +93,15 @@ function App() {
     {/* tentang */}
     {/* Proyek */}
     <div className="proyek mt-32 py-10">
-      <h1 className="text-center text-4xl font-bold mb-2">Proyek</h1>
-      <p className="text-base/loose text-center opacity-50">Berikut ini beberapa proyek yang telah saya 
-      buat.</p>
+      <h1 className="text-center text-4xl font-bold mb-2" 
+      data-aos="fade-up" data-aos-duration="1000">Proyek</h1>
+      <p className="text-base/loose text-center opacity-50" 
+      data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+        Berikut ini beberapa proyek yang telah saya buat.</p>
       <div className="proyek-box mt-14 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4">
        {listProyek.map((proyek) => (
-        <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md">
+        <div key={proyek.id} className="p-4 bg-zinc-800 rounded-md" 
+        data-aos="fade-up" data-aos-duration="1000" data-aos-delay={proyek.dad}>
           <img src={proyek.gambar} alt="Proyek Image" loading="lazy" />
             <div>
             <h1 className="text-2xl font-bold my-4">{proyek.nama}</h1>

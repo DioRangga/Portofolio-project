@@ -5,14 +5,14 @@ const PreLoader = () => {
     const [loading, setLoading] = useState(true);
     
     useEffect(() => {
-    setTimeout(() => setLoading(false), 3000)
+    setTimeout(() => setLoading(false), 2000)
     }, []);
 
   return (
     loading && (
    <div className="w-screen h-screen fixed flex items-center justify-center bg-black z-50">
     <div role="status">
-    <svg aria-hidden="true" class="inline w-10 h-10 text-neutral-tertiary animate-spin dark:text-gray-600
+    <svg aria-hidden="true" className="inline w-10 h-10 text-neutral-tertiary animate-spin dark:text-gray-600
     fill-purple-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 
         50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 
@@ -27,11 +27,11 @@ const PreLoader = () => {
         17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083
          38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
     </svg>
-    <span class="sr-only">Loading...</span>
+    <span className="sr-only">Loading...</span>
 </div>
     </div>
     )
-  )
-}
+  );
+};
 
 export default PreLoader
