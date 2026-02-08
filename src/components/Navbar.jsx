@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <div className="navbar py-7 flex items-center justify-between ">
         <div className="logo">
-            <h1 className="text-3xl font-bold bg-white text-black p-1 md:bg-transparent
+            <h1 className="text-3xl font-bold text-white p-1 md:bg-transparent
             md:text-white">Portfolio</h1>
         </div>
         <ul 
