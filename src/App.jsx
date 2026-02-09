@@ -25,7 +25,7 @@ function App() {
 {/* --- END LAYER BACKGROUND --- */}
 
       {/* 3. LAYER KONTEN: Pastikan menggunakan relative z-10 agar berada di atas background */}
-      <div className="relative z-10 container mx-auto px-4">
+      <div className="relative min-h-screen z-10 w-full overflow-x-hidden px-5 md:px-20">
 <Navbar />
 
 
@@ -53,7 +53,7 @@ function App() {
             </a>
         </div>
     </div>
-    <img src={DataImage.HeroImage} alt="Hero Image" className="w-125 md:ml-auto
+    <img src={DataImage.HeroImage} alt="Hero Image" className="w-full max-w-87.5 mx-auto md:ml-auto md:w-96
     animate__animated animate__backInRight animate__delay-3s" loading="lazy"/>
    </div>
 
@@ -94,7 +94,7 @@ function App() {
         <h1 className="text-4xl/snug font-bold mb-4" 
         data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
         Tools yang dipakai</h1>
-        <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-fulltext-base/loose 
+        <p className="xl:w-2/5 lg:w-2/4 md:w-2/3 sm:w-3/4 w-full text-base/loose 
         opacity-50" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" data-aos-once="true">
           Berikut ini beberapa tools yang biasa saya 
         pakai untuk pembuatan website ataupun Design</p>
@@ -154,7 +154,7 @@ function App() {
         <p className="text-base/loose text-center mb-10 opacity-50 "data-aos="fade-up" data-aos-duration="3000" data-aos-delay="300" data-aos-once="true">
         Mari terhubung dengan saya.</p>
       <form action="https://formsubmit.co/diogreencounty@gmail.com" method="POST" 
-      className="bg-zinc-800 p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" data-aos-once="true">
+      className="bg-zinc-800 p-5 sm:p-10 sm:w-fit w-full mx-auto rounded-md" autoComplete="off" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="500" data-aos-once="true">
         <div className="flex flex-col gap-6">
           <div className="flex flex-col gap-2">
           <label className="font-semibold"> Nama Lengkap</label>
@@ -168,8 +168,8 @@ function App() {
           </div>
           <div className="flex flex-col gap-2">
           <label className="font-semibold"> Pesan</label>
-          <textarea name="pesan" id="pesan" cols="45" rows="7" placeholder="Pesan..." className="border
-           border-zinc-500 p-2 rounded-md required"></textarea>
+          <textarea name="pesan" id="pesan"  rows="7" placeholder="Pesan..." className="border
+           border-zinc-500 p-2 w-full rounded-md resize-none"></textarea>
           </div>
           <div className="text-center">
           <button type="submit" className="bg-cyan-600 p-3 rounded-lg w-full cursor-pointer border
